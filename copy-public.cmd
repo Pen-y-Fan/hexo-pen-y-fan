@@ -1,0 +1,1 @@
+xcopy .\public\*.* ..\Pen-y-Fan.github.io\ /s /d /y
