@@ -1,4 +1,4 @@
-# Pen-y-Fan
+# Hexo Pen y Fan
 
 [Hexo.io](https://hexo.io/) static site generator for my static site
  [pen-y-fan.github.io](https://pen-y-fan.github.io/)

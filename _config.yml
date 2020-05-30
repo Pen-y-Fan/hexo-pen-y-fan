@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 'Pen-y-Fan'
+title: 'Pen y Fan'
 subtitle: 'My coding posts'
 description: 'Posts about my coding experiences, primarily for my learning path with PHP, good clean professional code.'
 keywords: 'PHP, Learning, resource, HTML, CSS, Git, Github'
-author: Pen-y-Fan
+author: 'Pen y Fan'
 language: en
 timezone: 'UTC'
 
