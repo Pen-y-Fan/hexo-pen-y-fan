@@ -101,7 +101,6 @@ copy-public.cmd
 cd ..\Pen-y-Fan.github.io\
 git status
 git add .
-git commit -m "Site updated..."
+git commit -m "Added Standard setup blog"
 git push origin master
 ```
-
