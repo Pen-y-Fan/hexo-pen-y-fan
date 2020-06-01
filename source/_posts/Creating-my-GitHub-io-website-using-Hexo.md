@@ -63,7 +63,7 @@ xcopy .\public\*.* ..\Pen-y-Fan.github.io\ /s /d /y
 cd ..\Pen-y-Fan.github.io\
 git status
 git add .
-git commit -m "Added first blog"
+git commit -m "Added git blog"
 git push origin master
 ```
 
