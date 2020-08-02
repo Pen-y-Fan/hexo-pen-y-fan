@@ -29,7 +29,6 @@
       <change afterPath="$PROJECT_DIR$/public/tags/PHP/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/tags/Tutorial/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/tags/Windows/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Setup-a-new-SilverStripe-4-Project.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/2020/05/30/Creating-my-GitHub-io-website-using-Hexo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/2020/05/30/Creating-my-GitHub-io-website-using-Hexo/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/2020/06/01/Standard-Setup-for-PHP-Projects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/2020/06/01/Standard-Setup-for-PHP-Projects/index.html" afterDir="false" />
@@ -58,9 +57,6 @@
       <change beforePath="$PROJECT_DIR$/public/tags/Resource/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/Resource/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/tags/static-site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/static-site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Creating-my-GitHub-io-website-using-Hexo.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Creating-my-GitHub-io-website-using-Hexo.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Running-Docker-on-Windows-10-Home.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Running-Docker-on-Windows-10-Home.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Standard-Setup-for-PHP-Projects.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Standard-Setup-for-PHP-Projects.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +106,7 @@
       <updated>1593700504489</updated>
       <workItem from="1593700505704" duration="6871000" />
       <workItem from="1595180779673" duration="2106000" />
-      <workItem from="1596369492429" duration="915000" />
+      <workItem from="1596369492429" duration="1948000" />
     </task>
     <task id="LOCAL-00001" summary="Update blog">
       <created>1595183003409</created>
