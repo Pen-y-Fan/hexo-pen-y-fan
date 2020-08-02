@@ -1,7 +1,8 @@
 ---
 title: Running Docker on Windows 10 Home
 date: 2020-07-02 15:37:42
-tags: Docker
+tags: [Docker, Windows]
+categories: [Docker]
 ---
 
 I have recently purchased a new laptop with Windows 10 home edition, after some research I found out that Docker will now run on Windows 10 home.

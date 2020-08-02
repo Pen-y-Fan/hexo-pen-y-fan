@@ -2,7 +2,7 @@
 title: Creating my GitHub.io website using Hexo
 date: 2020-05-30 17:42:31
 tags: [Hexo, static-site, GitHub, Git, Resource]
-categories: [Markdown, Node, Hexo]
+categories: [Hexo]
 ---
 ## Introduction
 
