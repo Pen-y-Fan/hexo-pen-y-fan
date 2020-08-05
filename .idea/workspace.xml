@@ -19,44 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623fb3af-4833-4c7e-999f-6652fd534241" name="Default Changelist" comment="Bump lodash to 4.17.19">
-      <change afterPath="$PROJECT_DIR$/public/2020/08/02/Setup-a-new-SilverStripe-4-Project/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/archives/2020/08/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/categories/Docker/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/categories/Hexo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/categories/Silverstripe/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tags/CMS/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tags/PHP/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tags/Tutorial/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tags/Windows/index.html" afterDir="false" />
+    <list default="true" id="623fb3af-4833-4c7e-999f-6652fd534241" name="Default Changelist" comment="Added silverstripe post and update tags">
+      <change afterPath="$PROJECT_DIR$/source/_posts/Why-I-enjoy-coding-Katas.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/2020/05/30/Creating-my-GitHub-io-website-using-Hexo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/2020/05/30/Creating-my-GitHub-io-website-using-Hexo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/2020/06/01/Standard-Setup-for-PHP-Projects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/2020/06/01/Standard-Setup-for-PHP-Projects/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/2020/07/02/Running-Docker-on-Windows-10-Home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/2020/07/02/Running-Docker-on-Windows-10-Home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/archives/2020/05/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/archives/2020/05/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/archives/2020/06/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/archives/2020/06/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/archives/2020/07/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/archives/2020/07/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/archives/2020/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/archives/2020/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/archives/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/archives/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/categories/Git/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/Git/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/categories/Laravel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/Laravel/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/categories/Markdown/Node/Hexo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/categories/Markdown/Node/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/categories/Markdown/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/Docker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/Docker/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/Easy-Coding-Standard-ECS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/Easy-Coding-Standard-ECS/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/Git/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/Git/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/GitHub/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/GitHub/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/Hexo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/Hexo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/Laravel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/Laravel/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/PhpStan/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/PhpStan/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/PhpStorm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/PhpStorm/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/PhpUnit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/PhpUnit/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/Rector/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/Rector/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/Resource/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/Resource/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/static-site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/static-site/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +71,8 @@
       <updated>1593700504489</updated>
       <workItem from="1593700505704" duration="6871000" />
       <workItem from="1595180779673" duration="2106000" />
-      <workItem from="1596369492429" duration="1948000" />
+      <workItem from="1596369492429" duration="2734000" />
+      <workItem from="1596659291499" duration="4177000" />
     </task>
     <task id="LOCAL-00001" summary="Update blog">
       <created>1595183003409</created>
@@ -122,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595183027325</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added silverstripe post and update tags">
+      <created>1596372653527</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596372653527</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,12 +117,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Update blog" />
     <MESSAGE value="Bump lodash to 4.17.19" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bump lodash to 4.17.19" />
+    <MESSAGE value="Added silverstripe post and update tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added silverstripe post and update tags" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1595183104636">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1596372672583">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1680.36.1680.1010@0.0.1536.824" timestamp="1596372672583" />
     <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595183104636" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596369510867">
       <screen x="0" y="0" width="1536" height="824" />

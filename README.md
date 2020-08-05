@@ -101,6 +101,11 @@ copy-public.cmd
 cd ..\Pen-y-Fan.github.io\
 git status
 git add .
-git commit -m "Added silverstripe post and update tags"
+git commit -m "Why I enjoy coding Kata's"
+git push origin master
+cd ..\hexo-pen-y-fan
+git status
+git add .
+git commit -m "Why I enjoy coding Kata's"
 git push origin master
 ```
