@@ -1,7 +1,7 @@
 ---
 title: Why I enjoy coding Kata's
 date: 2020-08-05 21:30:41
-tags: [PHP, Kata, PhpUnit, ECS, PhpStan]
+tags: [PHP, Kata, PhpUnit, Easy Coding Standard (ECS), PhpStan]
 categories: [Kata]
 ---
 
