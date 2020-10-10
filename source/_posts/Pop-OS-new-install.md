@@ -1,7 +1,7 @@
 ---
 title: Pop OS new install
 date: 2020-10-05 20:14:38
-tags: Docker, Linux
+tags: [Docker, Linux]
 ---
 
 I wanted to test out Linux after I had purchased a new laptop which came with Windows 10 home. Although I was generally happy with my dev environment, I still wanted to try out Linux as a dev environment. I chose to try Pop OS as it was recommended by several people, especially on the PHPUgly and Syntax podcasts.
