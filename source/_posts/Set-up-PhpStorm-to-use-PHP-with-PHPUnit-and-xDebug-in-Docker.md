@@ -1,11 +1,11 @@
 ---
-title: Set up PhpStorm to use PHP with PhpUnit and xDebug in Docker
+title: Set up PhpStorm to use PHP with PHPUnit and xDebug in Docker
 date: 2020-10-10 17:01:32
 tags: [Docker, Linux, PHP, PhpStorm, PhpUnit, Resource]
 categories: [Docker]
 ---
 
-I have recently configured my windows 10 laptop with an additional SSD, so I could experiment with Linux. I have already installed Pop!_OS Git, PhpStorm and Docker. I haven't installed PHP or Composer locally. Next I want to learn how to use this new environment. This is what I have found out so far.
+I have recently configured my windows 10 laptop with an additional SSD, so I could experiment with Linux. I have already [installed Pop!_OS Git, PhpStorm and Docker](/2020/10/05/Pop-OS-new-install/). I haven't installed PHP or Composer locally. Next I want to learn how to use this new environment. This is what I have found out so far.
 
 ## Start with a Project
 
@@ -19,7 +19,7 @@ cd GildedRose-Refactoring-Kata/php/
 
 ## Create docker-compose.yml
 
-It is possible to run Php cli without a docker-compose file, I have found it is easier to set up PhpStorm using this intermediate step.
+It is possible to run PHP cli without a docker-compose file, I have found it is easier to set up PhpStorm using this intermediate step.
 
 PhpStorm has several preconfigured Docker containers, source:
 
@@ -40,9 +40,30 @@ services:
     volumes:
       - ./:/app
     environment:
-      #For Linux, replace the line below with your hostname, which you can obtain by executing `hostname` in Terminal.
+      # For Linux, replace the line below with your hostname, 
+      # which you can obtain by executing `hostname` in Terminal.
       XDEBUG_CONFIG: remote_host=pop-os
     working_dir: "/app"
+```
+
+The above will work for Linux, for Windows and MacOS the `XDEBUG_CONFIG:` will need the changed as follows:
+
+### Windows and MacOS
+
+Windows and MacOS replace with `XDEBUG_CONFIG:host.docker.internal`, which will automatically resolve to the internal address of the host Docker is running on.
+
+```yaml
+environment:
+  XDEBUG_CONFIG: remote_host=host.docker.internal
+```
+
+### MacOS with local Homebrew php-fpm
+
+If you use a local Homebrew php-fpm installation, port 9000 (which is the default debugging port) may become occupied. PhpStorm will remain silent on starting listening for incoming connections. If this is the case, in the Settings | Languages & Frameworks | PHP | Debug, set the Debug port to 9001, and use the following configuration line instead.
+
+```yaml
+environment:
+  XDEBUG_CONFIG: remote_host=host.docker.internal, remote_port=9001
 ```
 
 ### Apache, PHP 7.3, XDebug 2.7 and MySQL
@@ -61,13 +82,20 @@ services:
     volumes:
       - ./:/var/www/html
     environment:
-      #For Windows and macOS, replace the line below with `host.docker.internal`, which will automatically resolve to the internal address of the host Docker is running on.
-      #For Linux, replace the line below with your hostname, which you can obtain by executing `hostname` in Terminal.
+      #For Windows and macOS, replace the line below with `host.docker.internal`,
+      # which will automatically resolve to the internal address of the host
+      # Docker is running on.
+      #For Linux, replace the line below with your hostname, 
+      # which you can obtain by executing `hostname` in Terminal.
       XDEBUG_CONFIG: remote_host=pop-os
-    working_dir: "/var/www/html"
-      #For macOS, if you use a local Homebrew php-fpm installation, port `9000` (which is the default debugging port) may become occupied. PhpStorm will remain silent on starting listening for incoming connections. If this is the case, in the Settings | Languages & Frameworks | PHP | Debug, set the Debug port to 9001, and use the following configuration line instead.
-
+      #For macOS, if you use a local Homebrew php-fpm installation, port `9000`
+      # (which is the default debugging port) may become occupied. PhpStorm will
+      # remain silent on starting listening for incoming connections. If this is
+      # the case, in the Settings | Languages & Frameworks | PHP | Debug, set the
+      # Debug port to 9001, and use the following configuration line instead.
+      
       #XDEBUG_CONFIG: remote_host=host.docker.internal, remote_port=9001
+    working_dir: "/var/www/html"
 
   mysql:
     image: phpstorm/mysql
@@ -92,14 +120,20 @@ docker run --rm --interactive --tty \
   composer install
 ```
 
-Alternativly, more complex projects will need specific PHP extensions to be installed, which are not included in the Composer Docker container. The following method could be used to install Composer, inside the container and install the dependencies.
+On windows change `$PWD` for the full path to the project (note: forward slash / as separator), remove the line end **\\** and run the command as one line: 
+
+```shell script
+docker run --rm -it -v c:/project-path/project-name:/app composer install
+```
+
+Alternatively, more complex projects will need specific PHP extensions to be installed, which are not included in the Composer Docker container. The following method could be used to install Composer, inside the container and install the dependencies.
 
 1. Access **bash** in the **php-cli** container: `docker-compose run --rm php-cli /bin/bash`
-2. Install Composer, by [following the download instructions](https://getcomposer.org/download/)
+2. Install Composer, by [following the download instructions for Linux](https://getcomposer.org/download/)
 3. Still, inside the container, install dependencies: `php composer.phar install`
 4. Exit the container `exit`
 
-Note: Using the second method Composer will create the vendor folder as root!
+Note: In Linux, using the second method Composer will create the vendor folder as root!
 
 ```shell script
 ls -l
@@ -123,7 +157,11 @@ ls -l
 drwxr-xr-x 27 michael michael   4096 Sep 30 21:36 vendor
 ```
 
+### Further information
+
 There is a detailed description about [running Docker containers as current host user](https://jtreminio.com/blog/running-docker-containers-as-current-host-user/).
+
+The official documentation on [Docker run](https://docs.docker.com/engine/reference/run/) and [docker-compose cli reference](https://docs.docker.com/compose/reference/overview/).
 
 ## Configure PhpStorm
 
@@ -145,7 +183,7 @@ There is a four stage process:
 - Select Unix socket
   - Confirm connection was successful
 
-![Docker settings](./Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/docker-settings.png "Docker settings")
+![Docker settings](./Set-up-PhpStorm-to-use-PHP-with-PHPUnit-and-xDebug-in-Docker/docker-settings.png "Docker settings")
 
 ### 2. Configure the default CLI interpreter
 
@@ -158,12 +196,12 @@ There is a four stage process:
 - Choose **Docker Compose**
 - Choose the Service from the drop down list (e.g. php-cli)
 
-![Configure the CLI Interpreter](./Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/configure-cli-interpreters.png "Configure the CLI Interpreter")
+![Configure the CLI Interpreter](./Set-up-PhpStorm-to-use-PHP-with-PHPUnit-and-xDebug-in-Docker/configure-cli-interpreters.png "Configure the CLI Interpreter")
 
 - Select OK
 - Change the name e.g. Docker PHP
 
-![CLI Interpreters](./Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/cli-interpreters.png "CLI Interpreters")
+![CLI Interpreters](./Set-up-PhpStorm-to-use-PHP-with-PHPUnit-and-xDebug-in-Docker/cli-interpreters.png "CLI Interpreters")
 
 - Apply and OK
 - Check the mapping
@@ -171,7 +209,7 @@ There is a four stage process:
   - e.g. for an app project \<Project root\>→/app
 
 
-## 3. Configure PhpUnit
+### 3. Configure PhpUnit
 
 - Settings (Ctrl + Alt  + S)
 - Search for Test Frameworks
@@ -183,9 +221,9 @@ There is a four stage process:
   - Input the script path based on the mapping inside the container e.g. **/app/vendor/autoload.php**
   - Under Test runner, tick Default configuration script, type in the path, in the docker container. e.g. **/app/phpunit.xml**
 
-![PHPUnit settings](./Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/phpunit-settings.png "PHPUnit settings")
+![PHPUnit settings](./Set-up-PhpStorm-to-use-PHP-with-PHPUnit-and-xDebug-in-Docker/phpunit-settings.png "PHPUnit settings")
 
-## 4. Create the test runner
+### 4. Create the test runner
 
 - Click Edit Configuration (next to run test button)
 - Click + to add
@@ -193,16 +231,18 @@ There is a four stage process:
 - Under Test Runner choose Defined in the configuration file
 - Name - e.g. Docker PHPUnit
 
-![PHPUnit settings](./Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/run-debug-config.png "PHPUnit settings")
+![PHPUnit settings](./Set-up-PhpStorm-to-use-PHP-with-PHPUnit-and-xDebug-in-Docker/run-debug-config.png "PHPUnit settings")
 
 - Click Play to run all the tests!
 
-![Run the tests](./Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/run-tests.png "Run the tests")
+![Run the tests](./Set-up-PhpStorm-to-use-PHP-with-PHPUnit-and-xDebug-in-Docker/run-tests.png "Run the tests")
 
 ## What about configuring xDebug?
 
 Thanks to this setup, xDebug has been automatically configured! It will use the default PHP Interpreter, which was configured in step 2. A breakpoint can be set in the app or tests can be run with coverage :)
 
-![Debug](./Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/debug.png "Debug as required")
+![Debug](./Set-up-PhpStorm-to-use-PHP-with-PHPUnit-and-xDebug-in-Docker/debug.png "Debug as required")
 
 Enjoy the kata!
+
+Edit:  Added details on running commands on MacOS and Windows and small tweaks.

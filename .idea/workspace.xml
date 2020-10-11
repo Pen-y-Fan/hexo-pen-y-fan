@@ -20,19 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="623fb3af-4833-4c7e-999f-6652fd534241" name="Default Changelist" comment="Add Pop OS blog">
-      <change afterPath="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/cli-interpreters.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/configure-cli-interpreters.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/debug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/docker-settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/phpunit-settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/run-debug-config.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker/run-tests.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Pop-OS-new-install.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Pop-OS-new-install.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PHPUnit-and-xDebug-in-Docker.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +86,8 @@
       <workItem from="1601919470553" duration="9588000" />
       <workItem from="1602186497085" duration="11330000" />
       <workItem from="1602331937140" duration="2171000" />
-      <workItem from="1602343526796" duration="6237000" />
+      <workItem from="1602343526796" duration="8946000" />
+      <workItem from="1602439026058" duration="3338000" />
     </task>
     <task id="LOCAL-00001" summary="Update blog">
       <created>1595183003409</created>
@@ -157,10 +147,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add Pop OS blog" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2419" y="294" width="424" height="519" key="FileChooserDialogImpl" timestamp="1601928378747">
+    <state x="2419" y="294" width="424" height="519" key="FileChooserDialogImpl" timestamp="1602406804812">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2419" y="294" width="424" height="519" key="FileChooserDialogImpl/1680.0.1920.1080/0.27.1680.1023@1680.0.1920.1080" timestamp="1601928378747" />
+    <state x="2419" y="294" width="424" height="519" key="FileChooserDialogImpl/1680.0.1920.1080/0.27.1680.1023@1680.0.1920.1080" timestamp="1602406804812" />
     <state x="2362" y="467" width="558" height="166" key="GitCloneDialog" timestamp="1601930042818">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
