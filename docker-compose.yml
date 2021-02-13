@@ -1,0 +1,16 @@
+version: '3'
+services:
+  server:
+    image: node:12.18.4-alpine
+    command: yarn server
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "4000:4000"
+  generate:
+    image: node:12.18.4-alpine
+    command: yarn build
+    working_dir: /app
+    volumes:
+      - .:/app

@@ -1,92 +1,106 @@
 # Hexo Pen y Fan
 
-[Hexo.io](https://hexo.io/) static site generator for my static site
+[Hexo.io](https://hexo.io/) static site generator for my blog site
  [pen-y-fan.github.io](https://pen-y-fan.github.io/)
 
 ## Requirements
 
-- [Node.js](https://nodejs.org/en/download/)
-- [Hexo](https://hexo.io/)
+- [Node.js](https://nodejs.org/en/download/) or [Docker](https://docs.docker.com/get-docker/)
+- [Hexo](https://hexo.io/) or [Docker](https://docs.docker.com/get-docker/)
 - [git](https://git-scm.com/downloads)
 
 ## Installation of Hexo
 
 - Official Documentation: [hexo.io/docs](https://hexo.io/docs/)
-- YouTube: [Hexo - Static Site Generator | Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm) -
- by Mike Dane c Sep 2017.
-
-### TL&DR install
-
-Install Hexo globally:
-
-```shell script
-npm install -g hexo-cli
-``` 
+- YouTube: [Hexo - Static Site Generator | Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm)
+  by Mike Dane c Sep 2017.
 
 ## Clone repository
 
 ```shell script
-get clone git@github.com:Pen-y-Fan/hexo-pen-y-fan.git
+git clone git@github.com:Pen-y-Fan/hexo-pen-y-fan.git
 cd hexo-pen-y-fan
-``` 
+```
 
 ## Quick Start
 
-### Create a new post
+### Run server
+
+The server can be started on port 4000
 
 ```shell script
+# with Make and Docker
+make server
+# with node/yarn installed
+yarn server
+# or node/npm installed
+npm run server
+# or, with node and hexo has been installed globally
+hexo server
+```
+
+Once started open the browser <localhost:4000>
+
+More info: [Server](https://hexo.io/docs/server.html)
+
+### Docker information
+
+`make server` Will start the container equivalent to:
+
+`docker run -p 4000:4000 -u $(id -u):$(id -g) -v $(pwd):/app -w /app --rm -it node:12.18.4-alpine /bin/sh`
+
+- `-p 4000:4000` on port 4000 and expose port 4000
+- `-u $(id -u):$(id -g)` under the current user's account
+- `-v $(pwd):/app` map the current directory to /app in the container
+- `-w /app` make /app the working directory
+- `--rm` when the container is closed it will be removed
+- `-it` allow an interactive terminal
+- `node:12.18.4-alpine` the previous node LTS release
+- `/bin/sh` open a shell (terminal)
+
+Note: Node 14 LTS has a [Regression in Node 14](https://github.com/hexojs/hexo/issues/4257), therefore the
+**composer-compose.yml** has been configured to use Node 12 until this is resolved.
+
+### Create a new post
+
+Options, depending on node being installed, with or without but hexo, or docker can be used, via make command.
+
+```shell script
+# or with Make and Docker:
+make hexo new=My-New-Post
+# Note: The `title` will need to be manually updated in the My-New-Post.md file
+
+# or if node is installed, but hexo not:
+npx hexo new "My New Post"
+# or with node and hexo has been installed globally:
 hexo new "My New Post"
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
 
-### Run server
+### Adding pictures
 
-```shell script
-hexo server
-```
+The [hexo-asset-link](https://github.com/liolok/hexo-asset-link) extension has been added, which allow pictures to be
+added and previewed using hexo server. When a new post is created, a folder with the same name is also created in
+source/_posts directory. Images saved in this folder can easily be added to a blog post. e.g.
 
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Create tags list page and categories list page
-
-Hexo does NOT create tags list page and categories list page in default, but Random theme provide those pages, you just
- need to create it.
-
-If you want to create tags list page, run this command in blog root path:
-
-```sh
-hexo new page tags
-```
-
-This will create the `tags` folder, and a markdown file `source/tags/index.md`, change the `type` value of this file as
- following:
-
-```yml
-title: Tags
-date: 2016-01-16 06:17:29
-type: "tags"
-comments: false
-```
-
-The same to create categories list page:
-
-```sh
-hexo new page categories
-```
-
-Modify the `source/categories/index.md` as following:
-
-```md
-title: Categories
-date: 2015-08-03 14:19:29
-type: "categories"
-comments: false
+```text
+![Alt Text](./2019-02-14-Test-Post/Test-Image.png "Title Text")
+![Docker settings](./Set-up-PhpStorm-to-use-PHP-with-PHPUnit-and-xDebug-in-Docker/docker-settings.png "Docker settings")
 ```
 
 ### Generate static files
 
+Options, depending on node being installed, with or without but hexo, or docker can be used, via make command
+
 ```shell script
+# with Make/Docker
+make generate
+# or with node/yarn installed
+yarn generate
+# or with node/npm:
+npm run generate
+# or if hexo has been installed globally
 hexo generate
 ```
 
@@ -94,16 +108,18 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 
 ## Deploy
 
-Assuming `Pen-y-Fan.github.io` is existing in the same patent directory as `hexo-pen-y-fan`
+Once the public directory has been generated, assuming `Pen-y-Fan.github.io` is existing, in the same patent directory
+as `hexo-pen-y-fan`
 
 ```shell script
-copy-public.cmd
-cd ..\Pen-y-Fan.github.io\
+# copy-public.cmd
+cp -u ./public/* ../Pen-y-Fan.github.io/
+cd ../Pen-y-Fan.github.io/
 git status
 git add .
 git commit -m "Post ... added"
 git push origin master
-cd ..\hexo-pen-y-fan
+cd ../hexo-pen-y-fan
 git status
 git add .
 git commit -m "Post ... added"
