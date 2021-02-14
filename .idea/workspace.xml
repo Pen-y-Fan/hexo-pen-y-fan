@@ -23,13 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="623fb3af-4833-4c7e-999f-6652fd534241" name="Default Changelist" comment="Add Pop OS blog">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker/hexo-demo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker/ines-mills-TGs0tHMk4eg-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker/silverstripe-hello-world.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,8 @@
       <workItem from="1604437298199" duration="1577000" />
       <workItem from="1604440897780" duration="599000" />
       <workItem from="1613158893852" duration="6908000" />
-      <workItem from="1613167779773" duration="32692000" />
+      <workItem from="1613167779773" duration="42187000" />
+      <workItem from="1613297582102" duration="21359000" />
     </task>
     <task id="LOCAL-00001" summary="Update blog">
       <created>1595183003409</created>

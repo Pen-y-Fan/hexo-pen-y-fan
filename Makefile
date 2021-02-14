@@ -1,6 +1,6 @@
 # Usage:
 
-# Check your user ID and update UID, if different
+# Set UID to your user ID. To check your user ID run `echo $(id -u)`
 UID = 1000
 
 # make up - starts the docker-compose in the same directory in demon (background)
@@ -29,16 +29,12 @@ hexo:
 
 shell:
 	docker-compose exec -u ${UID}:${UID} server /bin/sh
+shell-root:
+	docker-compose exec -u 0:0 server /bin/sh
+shell-run:
+	docker-compose run -u ${UID}:${UID} server /bin/sh
+shell-root-run:
+	docker-compose run -u 0:0 server /bin/sh
 
 chown:
 	docker-compose exec -u 0:0 server chown -R ${UID}:${UID} ./
-
-
-
-
-
-
-
-
-
-

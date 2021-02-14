@@ -47,19 +47,21 @@ More info: [Server](https://hexo.io/docs/server.html)
 
 `make server` Will start the container equivalent to:
 
-`docker run -p 4000:4000 -u $(id -u):$(id -g) -v $(pwd):/app -w /app --rm -it node:12.18.4-alpine /bin/sh`
+`docker run -d -p 4000:4000 -u $(id -u):$(id -g) -v $(pwd):/app -w /app --rm node:12.18.4-alpine yarn server`
 
+- `d` starts the docker container in a demon (background)
 - `-p 4000:4000` on port 4000 and expose port 4000
 - `-u $(id -u):$(id -g)` under the current user's account
 - `-v $(pwd):/app` map the current directory to /app in the container
 - `-w /app` make /app the working directory
 - `--rm` when the container is closed it will be removed
 - `-it` allow an interactive terminal
-- `node:12.18.4-alpine` the previous node LTS release
-- `/bin/sh` open a shell (terminal)
+- `node:12.18.4-alpine` the node 12 LTS release
+- `yarn server` run the server script `hexo server`
 
-Note: Node 14 LTS has a [Regression in Node 14](https://github.com/hexojs/hexo/issues/4257), therefore the
-**composer-compose.yml** has been configured to use Node 12 until this is resolved.
+Note: Node 14 LTS has a [regression in Node 14](https://github.com/hexojs/hexo/issues/4257), therefore the
+**composer-compose.yml** has been configured to use Node 12 until this is resolved. Node 12 is in maintenance until
+30 April 2022.
 
 ### Create a new post
 
@@ -113,7 +115,7 @@ as `hexo-pen-y-fan`
 
 ```shell script
 # copy-public.cmd
-cp -u ./public/* ../Pen-y-Fan.github.io/
+cp -r -u ./public/* ../Pen-y-Fan.github.io/
 cd ../Pen-y-Fan.github.io/
 git status
 git add .
