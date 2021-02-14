@@ -23,13 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="623fb3af-4833-4c7e-999f-6652fd534241" name="Default Changelist" comment="Add Pop OS blog">
-      <change afterPath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker/hexo-demo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker/ines-mills-TGs0tHMk4eg-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker/silverstripe-hello-world.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/random/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/random/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/random/layout/includes/layout.swig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/random/layout/includes/layout.swig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/random/layout/includes/user-card.swig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/random/layout/includes/user-card.swig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/random/layout/index.swig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/random/layout/index.swig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -118,7 +117,8 @@
       <workItem from="1604440897780" duration="599000" />
       <workItem from="1613158893852" duration="6908000" />
       <workItem from="1613167779773" duration="42187000" />
-      <workItem from="1613297582102" duration="21359000" />
+      <workItem from="1613297582102" duration="22991000" />
+      <workItem from="1613339261955" duration="4670000" />
     </task>
     <task id="LOCAL-00001" summary="Update blog">
       <created>1595183003409</created>
@@ -176,5 +176,9 @@
     <MESSAGE value="Added silverstripe post and update tags" />
     <MESSAGE value="Add Pop OS blog" />
     <option name="LAST_COMMIT_MESSAGE" value="Add Pop OS blog" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -120,10 +120,10 @@ cd ../Pen-y-Fan.github.io/
 git status
 git add .
 git commit -m "Post ... added"
-git push origin master
+git push
 cd ../hexo-pen-y-fan
 git status
 git add .
 git commit -m "Post ... added"
-git push origin master
+git push
 ```
