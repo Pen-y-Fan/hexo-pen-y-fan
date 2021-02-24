@@ -22,13 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623fb3af-4833-4c7e-999f-6652fd534241" name="Default Changelist" comment="Add Pop OS blog">
+    <list default="true" id="623fb3af-4833-4c7e-999f-6652fd534241" name="Default Changelist" comment="Added alt tag to avatar img">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/random/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/random/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/random/layout/includes/layout.swig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/random/layout/includes/layout.swig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/random/layout/includes/user-card.swig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/random/layout/includes/user-card.swig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/random/layout/index.swig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/random/layout/index.swig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Troubleshooting-Docker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/about/index.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +116,9 @@
       <workItem from="1613158893852" duration="6908000" />
       <workItem from="1613167779773" duration="42187000" />
       <workItem from="1613297582102" duration="22991000" />
-      <workItem from="1613339261955" duration="4670000" />
+      <workItem from="1613339261955" duration="5345000" />
+      <workItem from="1613346662620" duration="30000" />
+      <workItem from="1614198167165" duration="4946000" />
     </task>
     <task id="LOCAL-00001" summary="Update blog">
       <created>1595183003409</created>
@@ -148,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601932318162</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added alt tag to avatar img">
+      <created>1613344000444</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613344000444</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +182,8 @@
     <MESSAGE value="Bump lodash to 4.17.19" />
     <MESSAGE value="Added silverstripe post and update tags" />
     <MESSAGE value="Add Pop OS blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Pop OS blog" />
+    <MESSAGE value="Added alt tag to avatar img" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added alt tag to avatar img" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

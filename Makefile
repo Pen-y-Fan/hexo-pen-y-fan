@@ -1,8 +1,5 @@
 # Usage:
 
-# Set UID to your user ID. To check your user ID run `echo $(id -u)`
-UID = 1000
-
 # make up - starts the docker-compose in the same directory in demon (background)
 # make up-f - start the docker-compose in foreground (useful for error messages)
 # make down - stops the docker-compose
@@ -21,20 +18,20 @@ down:
 server:
 	docker-compose up --build --remove-orphans -d server
 generate:
-	docker-compose run -u ${UID}:${UID} --rm generate
+	docker-compose run -u ${shell id -u}:${shell id -g} --rm generate
 build:
-	docker-compose run -u ${UID}:${UID} --rm generate
+	docker-compose run -u ${shell id -u}:${shell id -g} --rm generate
 hexo:
-	docker-compose exec -u ${UID}:${UID} server npx hexo new $(new)
+	docker-compose exec -u ${shell id -u}:${shell id -g} server npx hexo new $(new)
 
 shell:
-	docker-compose exec -u ${UID}:${UID} server /bin/sh
+	docker-compose exec -u ${shell id -u}:${shell id -g} server /bin/sh
 shell-root:
 	docker-compose exec -u 0:0 server /bin/sh
 shell-run:
-	docker-compose run -u ${UID}:${UID} server /bin/sh
+	docker-compose run -u ${shell id -u}:${shell id -g} server /bin/sh
 shell-root-run:
 	docker-compose run -u 0:0 server /bin/sh
 
 chown:
-	docker-compose exec -u 0:0 server chown -R ${UID}:${UID} ./
+	docker-compose exec -u 0:0 server chown -R ${shell id -u}:${shell id -g} ./

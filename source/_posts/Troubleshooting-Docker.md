@@ -361,9 +361,9 @@ up-f:
 down:
 	docker-compose down --remove-orphans
 shell:
-	docker-compose exec -u ${UID}:${UID} silverstripe bash
+	docker-compose exec -u ${shell id -u}:${shell id -g} silverstripe bash
 shell-run:
-	docker-compose run -rm -u ${UID}:${UID} silverstripe bash
+	docker-compose run -rm -u ${shell id -u}:${shell id -g} silverstripe bash
 shell-root:
 	docker-compose exec -u 0:0 silverstripe bash
 shell-web:
@@ -371,19 +371,19 @@ shell-web:
 .PHONY : tests
 tests:
 	docker-compose exec silverstripe vendor/bin/phpunit
-	docker-compose exec silverstripe chown -R ${UID}:${UID} ./
+	docker-compose exec silverstripe chown -R ${shell id -u}:${shell id -g} ./
 	docker-compose exec silverstripe chown -R 33:33 ./public/
 lint:
-	docker-compose exec -u ${UID}:${UID} silverstripe vendor/bin/phpcs app/src app/tests
+	docker-compose exec -u ${shell id -u}:${shell id -g} silverstripe vendor/bin/phpcs app/src app/tests
 lint-clean:
-	docker-compose exec -u ${UID}:${UID} silverstripe vendor/bin/phpcbf app/src app/tests
+	docker-compose exec -u ${shell id -u}:${shell id -g} silverstripe vendor/bin/phpcbf app/src app/tests
 flush:
 	docker-compose exec silverstripe vendor/bin/phpunit app/tests '' flush=1
-	docker-compose exec silverstripe chown -R ${UID}:${UID} ./
+	docker-compose exec silverstripe chown -R ${shell id -u}:${shell id -g} ./
 	docker-compose exec silverstripe chown -R 33:33 ./public/
 
 chown:
-	docker-compose exec silverstripe chown -R ${UID}:${UID} ./
+	docker-compose exec silverstripe chown -R ${shell id -u}:${shell id -g} ./
 	docker-compose exec silverstripe chown -R 33:33 ./public/
 ```
 
@@ -606,23 +606,23 @@ down:
 server:
 	docker-compose up --build --remove-orphans -d server
 generate:
-	docker-compose run -u ${UID}:${UID} --rm generate
+	docker-compose run -u ${shell id -u}:${shell id -g} --rm generate
 build:
-	docker-compose run -u ${UID}:${UID} --rm generate
+	docker-compose run -u ${shell id -u}:${shell id -g} --rm generate
 hexo:
-	docker-compose exec -u ${UID}:${UID} server npx hexo new $(new)
+	docker-compose exec -u ${shell id -u}:${shell id -g} server npx hexo new $(new)
 
 shell:
-	docker-compose exec -u ${UID}:${UID} server /bin/sh
+	docker-compose exec -u ${shell id -u}:${shell id -g} server /bin/sh
 shell-root:
 	docker-compose exec -u 0:0 server /bin/sh
 shell-run:
-	docker-compose run -u ${UID}:${UID} server /bin/sh
+	docker-compose run -u ${shell id -u}:${shell id -g} server /bin/sh
 shell-root-run:
 	docker-compose run -u 0:0 server /bin/sh
 
 chown:
-	docker-compose exec -u 0:0 server chown -R ${UID}:${UID} ./
+	docker-compose exec -u 0:0 server chown -R ${shell id -u}:${shell id -g} ./
 ```
 
 You can see many similarities with the setup, even though they are completely different projects, the methods to start, stop and access are the same. This gives a consistent environment between projects.
@@ -655,7 +655,7 @@ docker ps
 # CONTAINER ID        IMAGE                ...  NAMES
 # e6ce46b15845        node:12.18.4-alpine  ...  hexo-demo_server_run_2746d359d723
 # note the name of your server (hexo-demo_server_run_2746d359d723) and replace it below:
-docker exec -u ${UID}:${UID} -it hexo-demo_server_run_2746d359d723 /bin/sh
+docker exec -u ${id -u}:${id -g} -it hexo-demo_server_run_2746d359d723 /bin/sh
 # /app # 
 whoami
 # node
@@ -817,3 +817,5 @@ Docker is a powerful development environment. By using the right image, extendin
 File permissions are the bain of Docker on Linux. Once we know how to run the containers, under the correct accounts and how to change the file and folder permissions, this problem is quickly overcome.
 
 Using Dockerfile with **docker-compose.yml** and **Makefile**. The project environment becomes much easy to work with.
+
+Edit: Replaced ${UID}:${UID} with ${shell id -u}:${shell id -g}
