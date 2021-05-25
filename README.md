@@ -120,6 +120,7 @@ cd ../Pen-y-Fan.github.io/
 git status
 git add .
 git commit -m "Post ... added"
+git commit -m "Post Standard setup for PHP projects 2021 added"
 git push
 cd ../hexo-pen-y-fan
 git status

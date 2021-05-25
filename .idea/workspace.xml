@@ -22,8 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623fb3af-4833-4c7e-999f-6652fd534241" name="Default Changelist" comment="Added alt tag to avatar img">
+    <list default="true" id="623fb3af-4833-4c7e-999f-6652fd534241" name="Default Changelist" comment="Add .editorconfig">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/Standard-setup-for-PHP-projects-2021.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Standard-Setup-for-PHP-Projects.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Standard-Setup-for-PHP-Projects.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +51,9 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Makefile" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1e8PywTyZJIjmZYYk3YXwUZwF67" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,7 +71,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON&#10;Markdown&#10;TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker" />
+    <property name="last_opened_file_path" value="$USER_HOME$/.bash_aliases" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,7 +79,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -80,6 +87,9 @@
       <recent name="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker" />
       <recent name="$PROJECT_DIR$/public/2020/10/10/Set-up-PhpStorm-to-use-PHP-with-PhpUnit-and-xDebug-in-Docker" />
       <recent name="$USER_HOME$/Documents" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -118,6 +128,14 @@
       <workItem from="1614198167165" duration="5196000" />
       <workItem from="1616016569563" duration="1147000" />
       <workItem from="1617692236454" duration="750000" />
+      <workItem from="1621759124888" duration="12594000" />
+      <workItem from="1621789315684" duration="11261000" />
+      <workItem from="1621872970923" duration="49000" />
+      <workItem from="1621873032061" duration="5247000" />
+      <workItem from="1621880220891" duration="10403000" />
+      <workItem from="1621955423208" duration="612000" />
+      <workItem from="1621965897294" duration="325000" />
+      <workItem from="1621966234642" duration="14233000" />
     </task>
     <task id="LOCAL-00001" summary="Update blog">
       <created>1595183003409</created>
@@ -154,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613344000444</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add .editorconfig">
+      <created>1621769717372</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621769717372</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +207,8 @@
     <MESSAGE value="Added silverstripe post and update tags" />
     <MESSAGE value="Add Pop OS blog" />
     <MESSAGE value="Added alt tag to avatar img" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added alt tag to avatar img" />
+    <MESSAGE value="Add .editorconfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .editorconfig" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
