@@ -22,9 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623fb3af-4833-4c7e-999f-6652fd534241" name="Default Changelist" comment="Add .editorconfig">
+    <list default="true" id="623fb3af-4833-4c7e-999f-6652fd534241" name="Default Changelist" comment="Add use case for Xdebug post">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PHPUnit-and-xDebug-in-Docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Set-up-PhpStorm-to-use-PHP-with-PHPUnit-and-xDebug-in-Docker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Standard-Setup-for-PHP-Projects.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Standard-Setup-for-PHP-Projects.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Why-I-enjoy-coding-Katas.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Why-I-enjoy-coding-Katas.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +214,8 @@
     <MESSAGE value="Add Pop OS blog" />
     <MESSAGE value="Added alt tag to avatar img" />
     <MESSAGE value="Add .editorconfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add .editorconfig" />
+    <MESSAGE value="Add use case for Xdebug post" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add use case for Xdebug post" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

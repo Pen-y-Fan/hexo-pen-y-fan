@@ -1,7 +1,7 @@
 ---
 title: Standard Setup for PHP projects
 date: 2020-05-31 23:38:00
-tags: [Laravel, PhpStorm, PhpStan, Easy Coding Standard (ECS), PhpUnit, Rector, PHP]
+tags: [Laravel, PhpStorm, PHPStan, Easy Coding Standard (ECS), PHPUnit, Rector, PHP]
 categories: [Coding Standards]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Set up PhpStorm to use PHP with PHPUnit and xDebug in Docker
 date: 2020-10-10 17:01:32
-tags: [Docker, Linux, PHP, PhpStorm, PhpUnit, Resource]
+tags: [Docker, Linux, PHP, PhpStorm, PHPUnit, Resource]
 categories: [Docker]
 ---
 

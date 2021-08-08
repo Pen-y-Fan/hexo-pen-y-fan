@@ -120,7 +120,7 @@ cd ../Pen-y-Fan.github.io/
 git status
 git add .
 git commit -m "Post ... added"
-git commit -m "Add post VS Code with PHP and Xdebug 3 2021"
+git commit -m "Add use case for Xdebug post"
 git push
 cd ../hexo-pen-y-fan
 git status
