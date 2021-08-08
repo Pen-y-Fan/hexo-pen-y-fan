@@ -71,11 +71,10 @@ Options, depending on node being installed, with or without but hexo, or docker 
 # or with Make and Docker:
 make hexo new=My-New-Post
 # Note: The `title` will need to be manually updated in the My-New-Post.md file
-
 # or if node is installed, but hexo not:
-npx hexo new "My New Post"
+npx hexo new "My-New-Post"
 # or with node and hexo has been installed globally:
-hexo new "My New Post"
+hexo new "My-New-Post"
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
@@ -119,8 +118,7 @@ copy-public.cmd
 cd ../Pen-y-Fan.github.io/
 git status
 git add .
-git commit -m "Post ... added"
-git commit -m "Add use case for Xdebug post"
+git commit -m "Add post How to install MySQL on WSL 2 (Ubuntu)"
 git push
 cd ../hexo-pen-y-fan
 git status
