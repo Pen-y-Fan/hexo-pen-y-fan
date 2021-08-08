@@ -5,6 +5,8 @@ tags: [Laravel, PhpStorm, PHPStan, Easy Coding Standard (ECS), PHPUnit, Rector, 
 categories: [Coding Standards]
 ---
 
+## Note: This is my standard setup from 2020, a newer version from 2021 is now available [Standard setup for PHP projects 2021](/2021/05/23/Standard-setup-for-PHP-projects-2021/)
+
 The focus in setting up PHP Projects in PhpStorm, in particular a Laravel project.
 
 Composer with PHP with Easy Coding Standard (ECS), PHPUnit, and PhpStan. Also, some ***simplify*** projects to allow the output to be displayed in PHPStorm.
@@ -199,7 +201,7 @@ In **PhpStorm** enable the Laravel plugin
 
 Create batch files in the root of the project, which work in combination with the composer scripts.
 
-### cc.bat
+- **cc.bat**
 
 Runs the composer script for ECS to check the code.
 
@@ -207,7 +209,7 @@ Runs the composer script for ECS to check the code.
 composer check-cs 
 ```
 
-### fc.bat
+- **fc.bat**
 
 Runs the composer script for ECS to fix the code.
 
@@ -215,7 +217,7 @@ Runs the composer script for ECS to fix the code.
 composer fix-cs 
 ```
 
-### rdr.bat
+- **rdr.bat**
 
 Runs the composer script for Rector for dry run. Adjust **rector.yml** as required.
 
@@ -223,7 +225,7 @@ Runs the composer script for Rector for dry run. Adjust **rector.yml** as requir
 composer rector:dry-run 
 ```
 
-### re.bat
+- **re.bat**
 
 Runs the composer script for Rector to fix the code (run dry run first!). Also adjust **rector.yml** as required. 
 
@@ -231,7 +233,7 @@ Runs the composer script for Rector to fix the code (run dry run first!). Also a
 composer rector
 ```
 
-### ps.bat
+**ps.bat**
 
 Runs the composer script for PhpStan to check the code. 
 
@@ -239,7 +241,7 @@ Runs the composer script for PhpStan to check the code.
 composer phpstan 
 ```
 
-### pu.bat
+**pu.bat**
 
 Runs the composer script for PhpUnit. 
 

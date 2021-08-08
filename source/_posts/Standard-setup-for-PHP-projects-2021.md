@@ -7,7 +7,7 @@ categories: [Standard Setup]
 
 The focus of this blog is to help set up PHP Projects in PhpStorm, in particular a [Silverstripe](https://www.silverstripe.org/) project. I have also included snippets from my side-projects. I hope the information will be useful for other PHP projects.
 
-This is a follow-up to my blog [Standard Setup for PHP projects](Standard-Setup-for-PHP-Projects.md) from 2020. There have been several changes, to config files in particular, easy coding standard yml files to php files, which now allow code completion, amongst other benefits. Xdebug is now version 3, which has different configuration. I Have also being using Docker since July 2020, so have some useful docker containers, which include many of the standards I'm looking for.
+This is a follow-up to my blog [Standard Setup for PHP projects](/2020/06/01/Standard-Setup-for-PHP-Projects/) from 2020. There have been several changes, to config files in particular, easy coding standard yml files to php files, which now allow code completion, amongst other benefits. Xdebug is now version 3, which has different configuration. I Have also being using Docker since July 2020, so have some useful docker containers, which include many of the standards I'm looking for.
 
 ## Developer environments
 
