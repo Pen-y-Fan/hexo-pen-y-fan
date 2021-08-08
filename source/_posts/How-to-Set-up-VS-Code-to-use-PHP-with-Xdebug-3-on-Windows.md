@@ -267,7 +267,7 @@ In Laragon, next to Apache click **Reload**. Click **web** button and **info**, 
 
 Refresh the webpage created earlier and Xdebug will now work on port 9004.
 
-Check the Xdebug helper icon is green, if it was grey click it and select DEbug, wait for it to turn green and refresh the page once more.
+Check the Xdebug helper icon is green, if it was grey click it and select Debug, wait for it to turn green and refresh the page once more.
 
 ### PHP CLI is different from the PHP used by Apache
 
