@@ -7,11 +7,20 @@ date: 2021-08-03 22:57:39
 
 ![VS Code with PHP and Xdebug 3](How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/vs-code-with-php-and-xdebug-3.png "VS Code with PHP and Xdebug 3")
 
-This is my method to set up [VS Code](https://code.visualstudio.com/) to use PHP with [Xdebug](https://xdebug.org/docs/) on Windows using [Laragon](https://laragon.org/).
+Xdebug 3 is an extremely powerful debugging tool for PHP. Although `print_r()`, `var_dump()` and `dd()` have their uses, Xdebug gives more powerful debugging options: [step debugging](https://xdebug.org/docs/step_debug) allows the ability to view execution of each line of code, including the ability to view all variables and their values. [Code coverage](https://xdebug.org/docs/code_coverage) is useful to identify untested code, or code which is never executed (ded code). [Development helpers](https://xdebug.org/docs/develop) improve the built-in `var_dump()` function, providing stack traces etc. VS Code can also change the variable, which is useful when testing manually particular functions while stepping through your code.
+
+> Xdebug's step debugger allows you to interactively walk through your code to debug control flow and examine data structures
+>
+> Code coverage tells you which lines of script (or set of scripts) have been executed during a request. With this information you can for example find out how good your unit tests are.
+> 
+> Xdebug's development helpers allow you to get better error messages and obtain more information from PHP's built-in functions. The helpers include an upgraded var_dump() function; location, stack, and argument information upon Notices, Warnings and Exceptions; and numerous functions and settings to tweak PHP's behaviour.
+
+This is how I set up  [VS Code](https://code.visualstudio.com/) to use PHP with [Xdebug](https://xdebug.org/docs/) on Windows using [Laragon](https://laragon.org/).
 
 ## Install Laragon for Windows
 
 > Laragon is a portable, isolated, fast & powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby. It is fast, lightweight, easy-to-use and easy-to-extend.
+> 
 > Laragon is great for building and managing modern web applications. It is focused on performance - designed around stability, simplicity, flexibility and freedom.
 
 [Download and Install](https://laragon.org/docs/install.html), the **Laragon Full (64-bit)** version. Run the installation, next>, next>, next>. You now have a fully working WAMP stack, plus Node/NPM, git, Composer and many more tools.
