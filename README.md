@@ -101,7 +101,7 @@ make generate
 # or with node/yarn installed
 yarn generate
 # or with node/npm:
-npm run generate
+npx hexo generate
 # or if hexo has been installed globally
 hexo generate
 ```
@@ -114,13 +114,13 @@ Once the public directory has been generated, assuming `Pen-y-Fan.github.io` is 
 as `hexo-pen-y-fan`
 
 ```shell script
-# copy-public.cmd
-cp -r -u ./public/* ../Pen-y-Fan.github.io/
+copy-public.cmd
+# cp -r -u ./public/* ../Pen-y-Fan.github.io/
 cd ../Pen-y-Fan.github.io/
 git status
 git add .
 git commit -m "Post ... added"
-git commit -m "Post Standard setup for PHP projects 2021 added"
+git commit -m "Add post VS Code with PHP and Xdebug 3 2021"
 git push
 cd ../hexo-pen-y-fan
 git status

@@ -23,11 +23,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="623fb3af-4833-4c7e-999f-6652fd534241" name="Default Changelist" comment="Add .editorconfig">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Standard-setup-for-PHP-projects-2021.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/add-configuration.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/add-laragon-to-path.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/check-xdebug-features.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/check-xdebug-is-working.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/debug-actions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/debug-basic-cli-script.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/debug-support-for-php-with-xdebug.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/download-xdebug-for-windows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/enable-xdebug-using-quick-settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/install-xdebug-helper-on-chrome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/launch-website.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/open-php-ext-directory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/run-netstat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/view-netstat-results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/vs-code-with-php-and-xdebug-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85f56585-35ed-4815-8a8f-592810cef687.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/85f56585-35ed-4815-8a8f-592810cef687.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Standard-Setup-for-PHP-Projects.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Standard-Setup-for-PHP-Projects.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +70,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Makefile" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1e8PywTyZJIjmZYYk3YXwUZwF67" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -71,7 +90,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON&#10;Markdown&#10;TEXT" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.bash_aliases" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -89,6 +108,9 @@
       <recent name="$USER_HOME$/Documents" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\cli\hexo-pen-y-fan\source\_posts\How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows" />
+      <recent name="C:\laragon\cli\hexo-pen-y-fan\source\_posts\Set-up-VS-Code-to-use-PHP-with-Xdebug-on-Windows" />
+      <recent name="C:\laragon\cli\hexo-pen-y-fan\source\_posts\Set-up-VS-Code-to-use-PHP-with-xDebug-on-Windows" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
