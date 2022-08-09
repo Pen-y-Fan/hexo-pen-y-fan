@@ -1,5 +1,7 @@
 # Hexo Pen y Fan
 
+:warning: This project is now **archived**, it has been replaced with [Hugo for Pen-y-Fan site](https://github.com/Pen-y-Fan/hugo-pen-y-fan)
+
 [Hexo.io](https://hexo.io/) static site generator for my blog site
  [pen-y-fan.github.io](https://pen-y-fan.github.io/)
 
